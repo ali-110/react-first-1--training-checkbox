@@ -1,5 +1,133 @@
+@font-face {
+  font-family: 'iransans';
+  src: url('fonts/WebFonts/fonts/eot/IRANSansWeb.eot'); /* IE9 Compat Modes */
+  src: url('fonts/WebFonts/fonts/woff2/IRANSansWeb.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/WebFonts/fonts/woff/IRANSansWeb.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/WebFonts/fonts/ttf/IRANSansWeb.ttf')  format('truetype') /* Safari, Android, iOS */
+  
+}
+@font-face {
+  font-family: 'iransansnum';
+  src: url('fonts/Farsi_numerals_(NonStandard)/webFonts/fonts/eot/IRANSansWeb(FaNum).eot'); /* IE9 Compat Modes */
+  src: url('fonts/Farsi_numerals_(NonStandard)/webFonts/fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Farsi_numerals_(NonStandard)/webFonts/fonts/woff/IRANSansWeb(FaNum).woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Farsi_numerals_(NonStandard)/webFonts/fonts/ttf/IRANSansWeb(FaNum).ttf')  format('truetype') /* Safari, Android, iOS */
+  
+}
+body{
+  font-family: 'iransansnum';
+}
+
+
+.emptycont{
+  height: 2px;
+}
+
+.k-multiselect .k-multiselect-wrap, .k-dropdowntree .k-multiselect-wrap {
+  padding: 0px;
+}
+
+.jkcJde h3, .jkcJde p {
+  margin: 0;
+  padding: 10px;
+}
+
+
+.date-pick {
+  direction: rtl;
+  text-align: right;
+}
+.rdp__modal{
+  text-align: center;
+  padding-top: 50px;
+}
+.bonqgD label {
+  width: 50px;
+}
+
+.bonqgD div {
+  display: inline-block;
+}
+
+
+.k-input{
+  width: 80px !important;
+}
+.bootstrap-tagsinput{
+  width: 100%;
+}
+.label-info{
+  background-color: #17a2b8;
+
+}
+.label {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,
+  border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+
+
+
+.searchform{
+  background-color: lightblue;
+}
+.slabel{
+  width: 100px;
+}
+.header .fas{
+  color: white;
+  font-size: 20px;
+  margin: 18px;
+}
+.col-md-1, .col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+
+  float: right;
+}
+.topMenu>a:hover button {
+  background-color: #8b5da3 !important;
+}
+.topMenu>a button {
+  box-shadow: unset !important;
+}
+.header img{
+  width: 40px;
+}
+.topMenu>a {
+  border-bottom: 2px solid aliceblue;
+}
+
+.rightmenu{
+  height: calc(100vh - 55px) !important;
+  border-radius: 5px 0px 0px 0px;
+
+}
+
+.header {
+  height: 55px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bg-prpl{
+  background-color: #4d3664 !important;
+}
+
+.bg-prpl-1{
+    background-color: #7570ad !important;
+}
+
 .App {
   text-align: center;
+  direction: rtl;
 }
 
 .App-logo {
