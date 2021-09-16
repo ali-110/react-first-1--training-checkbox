@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import productShow from './components/productShow'
+import {ProductShow} from './components/productShow'
 
 
 
@@ -19,7 +19,7 @@ function App() {
     <div className="col-md-12 bg-prpl header">
     <div class="text-right   col-md-2"><img src="./logo4.png"></img></div>
     <div class="  col-md-8 emptycont"></div>
-    <div class="text-left   col-md-2"><i class="fas fa-sign-in-alt"></i>
+    <div class="text-left   col-md-2"><a><i class="fas fa-sign-in-alt"></i></a>
 </div>
     </div>
      <Router>
@@ -30,7 +30,7 @@ function App() {
      </div>
      <Switch>
      <div className=" col-md-10">
-     <Route path='/displayProduct' component={productShow} />
+     <Route path='/displayProduct' component={ProductShow} />
    </div>
    </Switch>
 

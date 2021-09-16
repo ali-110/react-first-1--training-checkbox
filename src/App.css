@@ -18,6 +18,22 @@ body{
   font-family: 'iransansnum';
 }
 
+table{
+  border: 1px solid lightgray;
+}
+
+a{
+
+  cursor: pointer;
+}
+.submitbutt{
+
+  text-align: center;
+
+}
+.editform{
+  direction: rtl;
+}
 
 .emptycont{
   height: 2px;

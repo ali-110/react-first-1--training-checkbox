@@ -1,14 +1,13 @@
 import React, {Component} from 'react'
 var moment = require('jalali-moment');
 
-export default class FormPageProductsRow extends Component{
+export default function FormPageProductsRow(props){
 
-render(){
 
-let p = this.props.productss
+let p = props.productss
 
-var dateFrom = moment.from(this.props.datefrom, 'fa', 'YYYY/MM/DD').format('YYYY/MM/DD');
-var dateTo = moment.from(this.props.dateto, 'fa', 'YYYY/MM/DD').format('YYYY/MM/DD');
+var dateFrom = moment.from(props.datefrom, 'fa', 'YYYY/MM/DD').format('YYYY/MM/DD');
+var dateTo = moment.from(props.dateTo, 'fa', 'YYYY/MM/DD').format('YYYY/MM/DD');
 var dateCheck = moment.from(p.date, 'fa', 'YYYY/MM/DD').format('YYYY/MM/DD');
 
 var d1 = dateFrom.split("/");
@@ -22,7 +21,7 @@ var check = new Date(c[0], parseInt(c[1])-1, c[2]);
 console.log(check > from && check < to)
 
 return(
-  check > from && check < to && (this.props.selname == "" || this.props.selname.includes(p.name) ) && (this.props.selprovince == "" || this.props.selprovince.includes(p.province)) && (this.props.selcity == "" || this.props.selcity.includes(p.city))  ?
+  check > from && check < to && (props.selname == "" || props.selname.includes(p.name) ) && (props.selprovince == "" || props.selprovince.includes(p.province)) && (props.selcity == "" || props.selcity.includes(p.city))  ?
     <tr>
       <th scope="row">{p.id}</th>
       <td>{p.name}</td>
@@ -30,11 +29,13 @@ return(
       <td>{p.city}</td>
       <td>{p.price}</td>
       <td>{p.date}</td>
+      <td><a className="text-danger" onClick={()=>props.deleteItem(p)}><i className="fa fa-trash"></i></a></td>
+      <td><a className="text-secondary" onClick={()=>props.editItemClick(p)}><i className="fa fa-edit"></i></a></td>
     </tr>
 : ""
 )
 
-}
+
 
 
 
